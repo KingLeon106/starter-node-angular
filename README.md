@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MEAN Stack Single Page Application Starter
 
 This is a repo for a starter appliation for a Single Page MEAN Stack application. Just download and install and you have a good foundation for building application. 
@@ -18,3 +19,9 @@ If you have any questions or requests, email us at [chris@scotch.io](mailto:chri
 - Development and Production Environments
 - Link examples
 - Single Page AngularJS Animations
+=======
+Code repository for [https://www.packtpub.com/books/content/simple-todo-list-web-application-nodejs-express-and-riot](https://www.packtpub.com/books/content/simple-todo-list-web-application-nodejs-express-and-riot)
+
+Presently used by the following courses:
+  - Deployment (FSWO108-3)
+>>>>>>> b4447ce7ea813dc32689f5ff4b5d70b4b530194b

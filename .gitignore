@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 lib-cov
 *.seed
 *.log
@@ -50,3 +51,9 @@ Thumbs.db
 .Trashes
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
+=======
+.DS_Store
+build/
+node_modules/
+npm-debug.log
+>>>>>>> b4447ce7ea813dc32689f5ff4b5d70b4b530194b

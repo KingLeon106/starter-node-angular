@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "starter-node-angular",
   "main": "server.js",
@@ -25,3 +26,24 @@
   },
   "homepage": "https://github.com/KingLeon106/starter-node-angular#readme"
 }
+=======
+{
+  "name": "riot-express-todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "exit 0",
+    "start": "node app.js"
+  },
+  "author": "Pedro Narciso García Revington <p.revington@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "node-cmd": "^3.0.0",
+    "node-ssh": "^5.1.2"
+  }
+}
+>>>>>>> b4447ce7ea813dc32689f5ff4b5d70b4b530194b

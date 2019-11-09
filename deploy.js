@@ -22,8 +22,13 @@ function installPM2() {
 // transfers local project to the remote server
 function transferProjectToRemote(failed, successful) {
   return ssh.putDirectory(
+<<<<<<< HEAD
     '../starter-node-angular',
     '/home/ubuntu/starter-node-angular-temp',
+=======
+    '../riot-express-todo-list',
+    '/home/ubuntu/riot-express-todo-list-temp',
+>>>>>>> b4447ce7ea813dc32689f5ff4b5d70b4b530194b
     {
       recursive: true,
       concurrency: 1,
@@ -49,7 +54,11 @@ function transferProjectToRemote(failed, successful) {
 // creates a temporary folder on the remote server
 function createRemoteTempFolder() {
   return ssh.execCommand(
+<<<<<<< HEAD
     'rm -rf starter-node-angular-temp && mkdir starter-node-angular-temp', {
+=======
+    'rm -rf riot-express-todo-list-temp && mkdir riot-express-todo-list-temp', {
+>>>>>>> b4447ce7ea813dc32689f5ff4b5d70b4b530194b
       cwd: '/home/ubuntu'
   });
 }
@@ -65,7 +74,11 @@ function stopRemoteServices() {
 // updates the project source on the server
 function updateRemoteApp() {
   return ssh.execCommand(
+<<<<<<< HEAD
     'cp -r starter-node-angular-temp/* starter-node-angular/ && rm -rf starter-node-angular-temp', {
+=======
+    'cp -r riot-express-todo-list-temp/* riot-express-todo-list/ && rm -rf riot-express-todo-list-temp', {
+>>>>>>> b4447ce7ea813dc32689f5ff4b5d70b4b530194b
       cwd: '/home/ubuntu'
   });
 }
@@ -73,7 +86,11 @@ function updateRemoteApp() {
 // restart mongodb and node services on the remote server
 function restartRemoteServices() {
   return ssh.execCommand(
+<<<<<<< HEAD
     'cd starter-node-angular && sudo service mongod start && pm2 start app.js', {
+=======
+    'cd riot-express-todo-list && sudo service mongod start && pm2 start app.js', {
+>>>>>>> b4447ce7ea813dc32689f5ff4b5d70b4b530194b
       cwd: '/home/ubuntu'
   });
 }
@@ -85,9 +102,15 @@ function sshConnect() {
   ssh
     .connect({
       // TODO: ADD YOUR IP ADDRESS BELOW (e.g. '12.34.5.67')
+<<<<<<< HEAD
       host: '52.23.195.71',
       username: 'ubuntu',
       privateKey: 'starter-node-angular.pem'
+=======
+      host: '52.202.215.181',
+      username: 'ubuntu',
+      privateKey: 'todo-list.pem'
+>>>>>>> b4447ce7ea813dc32689f5ff4b5d70b4b530194b
     })
     .then(function() {
       console.log('SSH Connection established.');
@@ -95,7 +118,11 @@ function sshConnect() {
       return installPM2();
     })
     .then(function() {
+<<<<<<< HEAD
       console.log('Creating `starter-node-angular-temp` folder.');
+=======
+      console.log('Creating `riot-express-todo-list-temp` folder.');
+>>>>>>> b4447ce7ea813dc32689f5ff4b5d70b4b530194b
       return createRemoteTempFolder();
     })
     .then(function(result) {
